@@ -40,6 +40,7 @@ def lancar_notas2():
   qtd_notas = 0
 
   def processar(nova_nota):
+    nonlocal total, qtd_notas
     qtd_notas += 1
     total += nova_nota
     media = total / qtd_notas
